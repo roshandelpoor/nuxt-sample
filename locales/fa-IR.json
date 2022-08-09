@@ -1,0 +1,535 @@
+{
+  "error": {
+    "400": "خطای کاربری",
+    "401": "نیاز به ورود مجدد",
+    "403": "شما دسترسی برای انجام این عملیات را ندارید",
+    "423": "خطا در اطلاعات ارسالی",
+    "500": "خطای پیش بینی نشده‌ای رخ داد"
+  },
+  "report": {
+    "download": "دانلود گزارش",
+    "generalReport": {
+      "title": "آمار کلی",
+      "groupBy": {
+        "none": "هیچ کدام",
+        "province": "استان",
+        "city": "شهر",
+        "branch": "شعبه",
+        "date": "تاریخ"
+      },
+      "headers": {
+        "status": "وضعیت",
+        "date": "تاریخ درخواست",
+        "province": "استان",
+        "city": "شهر",
+        "branch": "شعبه",
+        "number": "تعداد"
+      }
+    },
+    "operatorReport": {
+      "title": "عملکرد اپراتور",
+      "headers": {
+        "operation": "عملیات",
+        "operatorUserName": "اپراتور",
+        "customerNationalCode": "کد ملی مشتری",
+        "errorMessage": "متن خطا",
+        "operationDate": "تاریخ انجام عملیات",
+        "status": "وضعیت"
+      },
+      "status": {
+        "successful": "موفق",
+        "fail": "ناموفق"
+      },
+      "operationName": {
+        "DOWNLOAD_EXCEL_REQUESTS": "ایجاد فایل اکسل",
+        "CREATED_OPENED_DEPOSIT_FILE": "ایجاد فایل اکسل",
+        "DELETE_ONLINE_DEPOSIT": "حذف درخواست",
+        "VIDEO_ARTIFICIAL_INTELLIGENCE": "سرویس تشخیص هوش مصنوعی",
+        "RECOVERY_CUSTOMER": "بازیابی شماره مشتری",
+        "OPEN_DEPOSIT_STATISTIC_REPORT": "گرفتن گزارش از درخواست ها",
+        "CHANGE_DELIVERY_POSTAL_CODE": "ویرایش کد پستی محل تحویل",
+        "CONFIRM_DOCUMENT": "تایید مدارک ارسالی",
+        "CREATE_CUSTOMER": "تعریف مشتری",
+        "OPEN_DEPOSIT": "افتتاح حساب",
+        "RECOVERY_CUSTOMER_DEPOSIT": "بازیابی شماره حساب",
+        "SHOW_CUSTOMER_INFO": "نمایش اطلاعات درخواست",
+        "MAKE_READY_FOR_PROCESS": "انتقال به وضعیت آماده برای بررسی",
+        "CHANGE_BRANCH_CODE": "ویرایش کد شعبه",
+        "SHARE_MONEY": "تقسیم پول",
+        "SEARCH_ONLINE_DEPOSIT": "جستجوی درخواست",
+        "SEARCH_EXCEL_FILES": "جستجوی فایل های ایجاد شده",
+        "PRINT_DELIVERY_INFO": "چاپ آدرس",
+        "REJECT_DOCUMENT": "رد مدارک ارسالی",
+        "SAVE_USER_PASS": "ثبت نام کاربری و رمز عبور",
+        "CHANGE_POSTAL_CODE": "ویرایش کد پستی",
+        "CHANGE_CARD_PRINT_STATUS": "تغییر وضعیت فایل ایجاد شده",
+        "UPDATE_OPENED_DEPOSIT_FILE_STATUS": "تغییر وضعیت فایل ایجاد شده",
+        "REJECT": "رد مدارک ارسالی",
+        "CHANGE_DELIVERY_ADDRESS": "ویرایش آدرس محل تحویل",
+        "UPDATE_STATUS_TO_IN_PROGRESS": "بررسی درخواست",
+        "UPDATE_STATUS_TO_READY_FOR_PROCESS": "لغو بررسی",
+        "CREATE_EXCEL_FILE": "ایجاد فایل اکسل",
+        "PAYMENT_LIST_SEARCH": "جستجوی پرداخت ها",
+        "CHANGE_Address": "ویرایش آدرس",
+        "EDIT_ADDRESS": "ویرایش آدرس",
+        "SAVE_USERNAME": "ثبت نام کاربری و رمز عبور",
+        "REVERT_STATUS_TO_READY_FOR_PROCESS": "بازگردانی وضعیت به اماده برای بررسی",
+        "UPDATE_STATUS_TO_CARD_SENT": "تغییر وضعیت به کارت صادر شده",
+        "UNKNOWN": "نامعلوم",
+        "GENERATE_CARD_PIN": "دریافت رمز اول",
+        "SET_SECOND_PIN": "دریافت رمز دوم",
+        "UPDATE_INFORMATION": "ارسال مشخصات",
+        "UPDATE_DOC": "ارسال مدارک",
+        "REGISTRY_INQUIRY": "استعلام ثبت احوال",
+        "CHEQUE_INQUIRY": "استعلام چک برگشتی",
+        "GET_PAYMENT_URL": "دریافت لینک درگاه پرداخت",
+        "PAYMENT_WEBHOOK": "بروزرسانی وضعیت پرداخت",
+        "CHECK_PAYMENT": "پیگیری پرداخت",
+        "REFUND": "درخواست بازگشت وجه",
+        "REFUND_FOLLOW_UP": "پیگیری بازگشت وجه",
+        "SETUP_MOBILE_BANK": "راه اندازی موبایل",
+        "SETUP_WEB_MOBILE_BANK": "راه اندازی موبایل بانک از طریق وب"
+      }
+    },
+    "smsReport": {
+      "title": "گزارش پیامک",
+      "headers": {
+        "nationalCode": "کد ملی",
+        "customerNo": "شماره مشتری",
+        "depositNo": "شماره حساب",
+        "status": "وضعیت"
+      }
+    }
+  },
+  "user": {
+    "title": "جست و جوی کاربران",
+    "search": "جست و جو",
+    "username": "نام کاربری",
+    "password": "رمز",
+    "name": "نام",
+    "nationalCode": "کد ملی",
+    "phoneNumber": "موبایل",
+    "lastname": "نام خانوادگی",
+    "role": "نقش",
+    "permission": "دسترسی",
+    "status": {
+      "title": "وضعیت",
+      "0": "غیرفعال",
+      "1": "فعال"
+    },
+    "permissions": {
+      "0": "افتتاح حساب",
+      "1": "گرفتن خروجی صدور کارت",
+      "2": "ساخت کاربر",
+      "3": "دیدن گزارشات",
+      "4": "دسترسی کامل"
+    },
+    "locationAccess": {
+      "title": "دسترسی منطقه ای",
+      "FULL_ACCESS": "دسترسی کامل",
+      "UNIVERSAL": "کشوری",
+      "PROVINCE": "استانی",
+      "CITY": "شهر",
+      "BRANCH": "شعبه"
+    },
+    "province": "استان",
+    "city": "شهر",
+    "branch": "شعبه",
+    "newUser": "کاربر جدید",
+    "createDialog": "ایجاد کاربر جدید",
+    "editDialog": "ویرایش کاربر",
+    "active": "فعال",
+    "inactive": "غیر فعال",
+    "roles": {
+      "ADMIN": "مدیر",
+      "USER": "کارگزار شعبه",
+      "REPORTER": "گزارشگیر"
+    },
+    "validation": {
+      "required": "این فیلد اجباری است.",
+      "length": "طول داده‌ی ورودی معتبر نیست."
+    },
+    "deleteGuide": "با کلیک روی این کلید در هر سر می‌توانید کاربر مورد نظر را غیر فعال کنید",
+    "editGuide": "با کلیک روی این کلید در هر سطر، می‌توانید اطلاعات کاربر مورد نظر را ویرایش کنید.",
+    "clearButton": "با کلیک روی این کلید اطلاعات درخواست های موجود در صفحه پاک میشود."
+  },
+  "profile": {
+    "title": "پروفایل",
+    "id": "شناسه",
+    "changePassButton": "تغییر کلمه عبور",
+    "passwordRecovery": "بازیابی کلمه عبور",
+    "password": "کلمه عبور",
+    "repeatPassword": "تکرار کلمه عبور",
+    "PasswordMustMatch": "کلمه عبور و تکرار آن باید یکسان باشند."
+  },
+  "login": {
+    "login": "ورود",
+    "logout": "خروج",
+    "user_name": "نام کاربری",
+    "password": "رمز عبور",
+    "signup": "عضویت",
+    "requestPass": "ارسال رمز پیامکی",
+    "timeLeft": "زمان مانده",
+    "successful": "شما با موفقیت به سامانه وارد شدید.",
+    "failed": "نام کاربری و یا رمز عبور اشتباه است.",
+    "error": "متاسفانه در عملیات ورود خطایی رخ داده است."
+  },
+  "menu": {
+    "request": "درخواست ها",
+    "payment": "پرداخت ها",
+    "reports": "گزارشات",
+    "getExcelFile": "دریافت خروجی اکسل",
+    "users": "کاربران",
+    "createdFile": "درخواست های ایجاد شده",
+    "operatorLog": "لاگ اپراتور",
+    "requestsLog": "آمار درخواست ها",
+    "enableSms": "فعالسازی پیامک",
+    "refund": "بازگشت وجه"
+  },
+  "createExcel": {
+    "download": "دانلود فایل",
+    "reports": "گزارشات",
+    "createFile": "ایجاد فایل",
+    "fromDate": "از تاریخ",
+    "toDate": "تا تاریخ",
+    "tagId": "tagId",
+    "cardTemplateId": "cardTemplateId",
+    "cardOwnerId": "cardOwnerId",
+    "accountNumber": "accountNumber"
+  },
+  "created": {
+    "changeStatus": "تغییر وضعیت به چاپ شده",
+    "printAddress": "چاپ ادرس",
+    "table": {
+      "header": {
+        "rowsNumber": "تعداد سطرها",
+        "changeStatus": "تغییر وضعیت",
+        "fileName": "نام فایل",
+        "download": "دانلود",
+        "startDate": "تاریخ شروع",
+        "endDate": "تاریخ پایان",
+        "status": "وضعیت",
+        "createdDate": "تاریخ ایجاد"
+      }
+    },
+    "status": {
+      "1": "خروجی گرفته شده",
+      "2": "چاپ شده"
+    }
+  },
+  "company": "عصر دانش‌افزار",
+  "common": {
+    "username": "نام کاربری",
+    "password": "رمزعبور",
+    "activate": "فعال شود",
+    "deactivate": "فعال نشود",
+    "status": "وضعیت",
+    "province": "استان",
+    "city": "شهر",
+    "branch": "شعبه",
+    "success": "موفق",
+    "fail": "ناموفق"
+  },
+  "headers": {
+    "firstname": "نام",
+    "lastname": "نام خانوادگی",
+    "province": "استان",
+    "city": "شهر",
+    "branch": "شعبه",
+    "status": "وضعیت",
+    "depositType": "نوع حساب",
+    "customerNumber": "شماره مشتری",
+    "nationalCode": "کد ملی",
+    "mobileNumber": "شماره موبایل",
+    "createdDate": "تاریخ ایجاد",
+    "paymentDate": "تاریخ پرداخت",
+    "number": "تعداد",
+    "fileName": "نام فایل",
+    "startDate": "تاریخ شروع",
+    "endDate": "تاریخ پایان",
+    "download": "دانلود",
+    "sourceDepositNumber": "شماره حساب مبدا‌ء",
+    "destinationDepositNumber": "شماره حساب مقصد",
+    "date": "تاریخ",
+    "amount": "مبلغ",
+    "deliveryType": "نحوه‌ی دریافت کارت",
+    "printAddress": "چاپ آدرس",
+    "smsEnabled": "فعالسازی پیامک",
+    "statusCategory": "دسته بندی وضعیت",
+    "referenceId": "کد پیگیری",
+    "iban": "شماره شبا",
+    "ownerName": "نام دارنده شبا",
+    "depositNo": "شماره حساب",
+    "platform": "کانال ثبت نام"
+  },
+  "buttons": {
+    "showDetail": "بررسی",
+    "saveUsername": "ثبت نام کاربری",
+    "submit": "ثبت",
+    "cancel": "انصراف",
+    "search": "جستجو",
+    "updateStatusToInProcess": "بررسی درخواست",
+    "updateStatusToReadyForProcess": "لغو بررسی درخواست",
+    "updateStatusToCardSent": "تغییر وضعیت به کارت صادر شده",
+    "revertStatusToReadyForProcess": "بازگشت وضعیت به آماده برای بررسی",
+    "edit": "ویرایش",
+    "rejectDocument": "رد مدارک",
+    "changeStatus": "تغییر وضعیت به چاپ شده",
+    "printAddress": "فرمت اول",
+    "printAddressV2": "فرمت دوم",
+    "removeOnlineDeposit": "حذف درخواست",
+    "retryShareMoney": "تلاش مجدد برای تقسیم وجوه ",
+    "followUp": "پیگیری",
+    "openDepositPresence": "عودت وجه",
+    "showOnlineDeposit": "مشاهده درخواست"
+  },
+  "onlineDepositStatus": {
+    "INIT": {
+      "value": "INIT",
+      "name": "کاربر مدرکی ارسال نکرده"
+    },
+    "IN_PROGRESS": {
+      "value": "IN_PROGRESS",
+      "name": "در حال تکمیل مدارک"
+    },
+    "REGISTRY_INQUIRY_REJECTED": {
+      "value": "REGISTRY_INQUIRY_REJECTED",
+      "name": "رد وضعیت کاربر توسط ثبت احوال"
+    },
+    "REGISTRY_INQUIRY_ERROR": {
+      "value": "REGISTRY_INQUIRY_ERROR",
+      "name": "خطا در تایید ثبت احوال"
+    },
+    "READY_FOR_PROCESS": {
+      "value": "READY_FOR_PROCESS",
+      "name": "آماده برای بررسی"
+    },
+    "IN_PROCESS": {
+      "value": "IN_PROCESS",
+      "name": "در حال بررسی",
+      "openDepositProcessStep": 1,
+      "stepName": "تایید مدارک",
+      "buttonText": "تایید مدارک و شروع فرایند افتتاح حساب"
+    },
+    "DOC_CONFIRMED": {
+      "value": "DOC_CONFIRMED",
+      "name": "مدارک ارسالی تایید شده",
+      "openDepositProcessStep": 2,
+      "stepName": "تعریف مشتری",
+      "buttonText": "تعریف مشتری و ادامه‌ی فرایند"
+    },
+    "CUSTOMER_CREATED": {
+      "value": "CUSTOMER_CREATED",
+      "name": "مشتری تعریف شده",
+      "openDepositProcessStep": 3,
+      "stepName": "افتتاح حساب",
+      "buttonText": "افتتاح حساب و ادامه‌ی فرایند"
+    },
+    "DEPOSIT_OPENED": {
+      "value": "DEPOSIT_OPENED",
+      "name": "حساب افتتاح شده",
+      "openDepositProcessStep": 4,
+      "stepName": "تقسیم پول و تکمیل فرایند",
+      "buttonText": "تقسیم پول"
+    },
+    "SHARED_MONEY": {
+      "value": "SHARED_MONEY",
+      "name": "تقسیم پول انجام شده"
+    },
+    "READY_FOR_CARD_ISSUE": {
+      "value": "READY_FOR_CARD_ISSUE",
+      "name": "آماده برای صدور کارت"
+    },
+    "REJECTED": {
+      "value": "REJECTED",
+      "name": "درخواست توسط اپراتور رد شده",
+      "stepName": "مدارک ارسالی توسط اپراتور رد شد"
+    },
+    "CARD_SENT": {
+      "value": "CARD_SENT",
+      "name": "کارت صادر شده"
+    },
+    "MOBILE_DONE": {
+      "value": "MOBILE_DONE",
+      "name": "دارای رمز موبایل بانک"
+    },
+    "CARD_PIN_SET": {
+      "value": "CARD_PIN_SET",
+      "name": "دارای رمز اول"
+    },
+    "EPAY_PIN_SET": {
+      "value": "EPAY_PIN_SET",
+      "name": "دارای رمز دوم"
+    },
+    "CARD_REGISTERED": {
+      "value": "CARD_REGISTERED",
+      "name": "کارت  با موفقیت ثبت شد"
+    },
+    "REFUND": {
+      "value": "REFUND",
+      "name": "کاربر درخواست بازگشت وجه داده"
+    },
+    "OPEN_DEPOSIT_PRESENCE": {
+      "value": "OPEN_DEPOSIT_PRESENCE",
+      "name": "افتتاح حساب شده در شعبه"
+    },
+    "CHEQUE_INQUIRY_REJECTED": {
+      "value": "CHEQUE_INQUIRY_REJECTED",
+      "name": "دارای چک برگشتی"
+    }
+  },
+  "onlineDepositFields": {
+    "id": "شناسه درخواست",
+    "status": "وضعیت",
+    "createdDate": "تاریخ ثبت درخواست",
+    "depositType": "نوع حساب",
+    "branchCode": "کد شعبه",
+    "amountPayed": "مبلغ پرداخت شده",
+    "paymentPattern": "الگوی پرداخت",
+    "deliveryType": "نحوه‌ی دریافت کارت",
+    "smsEnabled": "سرویس ارسال پیامک",
+    "depositNo": "شماره حساب",
+    "customerNo": "شماره مشتری",
+    "nationalCode": "کد ملی",
+    "shenasnameNo": "شماره شناسنامه",
+    "firstname": "نام",
+    "lastname": "نام خانوادگی",
+    "fullName": "نام و نام خانوادگی",
+    "fatherName": "نام پدر",
+    "birthDate": "تاریخ تولد",
+    "mobileNumber": "شماره موبایل",
+    "job": "شغل",
+    "address": "آدرس محل سکونت",
+    "postalCode": "کد پستی محل سکونت",
+    "deliveryAddress": "آدرس ارسال کارت",
+    "deliveryPostalCode": "کد پستی ارسال کارت"
+  },
+  "titles": {
+    "filters": "فیلتر ها",
+    "requestInfo": "اطلاعات درخواست",
+    "personalInfo": "مشخصات فردی",
+    "nationalCardImage": "تصویر کارت ملی",
+    "video": "ویدیو ارسالی",
+    "signatureImage": "تصویر امضاء",
+    "address": "آدرس محل سکونت",
+    "deliveryAddress": "آدرس ارسال کارت",
+    "openDepositProcess": "فرایند افتتاح حساب",
+    "saveUsername": "ثبت نام کاربری و رمز عبور",
+    "createdFile": "فایل های ایجاد شده",
+    "createFile": "ایجاد فایل",
+    "shareMoneyProcess": "فرایند تقسیم پول",
+    "category": "دسته بندی",
+    "total": "تعداد کل",
+    "platform": "کانال ثبت نام",
+    "empty": "وارد نشده"
+  },
+  "filters": {
+    "fromDate": "از تاریخ",
+    "toDate": "تا تاریخ",
+    "status": "وضعیت",
+    "lastName": "نام خانوادگی",
+    "nationalCode": "کد ملی",
+    "depositType": "نوع حساب",
+    "phoneNumber": "شماره موبایل",
+    "customerNo": "شماره مشتری",
+    "depositNo": "شماره حساب",
+    "groupBy": "دسته بندی",
+    "operationName": "نام عملیات",
+    "operatorUsername": "نام اپراتور",
+    "deliveryType": "نحوه‌ی دریافت کارت",
+    "smsEnabled": "فعالسازی پیامک",
+    "category": "دسته بندی وضعیت",
+    "referenceId": "شماره پیگیری",
+    "iban": "شماره شبا",
+    "ownerName": "نام دارنده شبا",
+    "platform": "کانال ثبت نام"
+  },
+  "messages": {
+    "successful": "عملیات شما با موفقیت انجام شد",
+    "failed": "عملیات شما با خطا مواجه شد",
+    "aiFailed": "خطا در پاسخگویی سرویس هوش مصنوعی",
+    "selectAllDocumentsStatus": "لطفا وضعیت تمام مدارک را مشخص کنید",
+    "ok": "فهمیدم",
+    "warning": "آیا مطمئن هستید؟",
+    "dateEmpty": "لطفا بازه‌ی زمانی را مشخص کنید",
+    "customerExistBefore": "مشتری از قبل تعریف شده بود",
+    "refundFollowUp": "وضعیت درخواست بازگشت وجه:",
+    "openDepositPresence": "\nجهت عودت وجه کاربر بر روی دکمه \"عودت وجه\" کلیک کنید"
+  },
+  "dropDownItems": {
+    "all": "همه",
+    "video": {
+      "confirm": "ویدیو ارسالی شده صحیح است",
+      "hijab": "در ویدیوی ارسالی، پوشش اسلامی و مناسب رعایت نشده است",
+      "notClearVoice": "در ویدیوی ارسالی، جمله گفته شده واضح نیست",
+      "notCorrectVoice": "در ویدیوی ارسالی، جمله گفته شده صحیح نیست",
+      "notClearFace": "در ویدیوی ارسالی، تصویر شما واضح نیست",
+      "notMatch": "ویدیوی ارسالی متعلق به شخص دیگری است",
+      "notValid": "ویدیوی ارسالی قابل قبول نیست"
+    },
+    "signatureImage": {
+      "confirm": "تصویر امضاء صحیح است",
+      "notClear": "تصویر امضاء واضح نیست",
+      "notValid": "تصویر امضاء مورد قبول نیست",
+      "fingerPrintNotAcceptable": "مهر/اثر انگشت مورد قبول نمیباشد"
+    },
+    "nationalCardImage": {
+      "confirm": "تصویر کارت تطابق دارد",
+      "notMatch": "تصویر کارت ملی با اطلاعات ثبت احوال تطابق ندارد",
+      "notClear": "تصویر کارت ملی واضح نیست",
+      "notValid": "تصویر کارت ملی مورد قبول نیست"
+    }
+  },
+  "deliveryType": {
+    "empty": "وارد نشده",
+    "branch": "تحویل حضوری",
+    "address": "ارسال با پست"
+  },
+  "loc": {
+    "TsbService": "سرویس tsb",
+    "YaghutService": "سرویس یاقوت",
+    "OnlineDepositId": "شناسه درخواست",
+    "OnlineDepositFileId": "شناسه فایل",
+    "Role": "نقش",
+    "AuthorizationToken": "احراز هویت",
+    "PostalCode": "کدپستی",
+    "Paginate": "صفحه بندی",
+    "UserId": "شناسه کاربری",
+    "LocationAccess": "سطح دسترسی منطقه‌ای",
+    "Username": "نام کاربری",
+    "UserAccess": "سطح دسترسی",
+    "DocConfirm": "تایید مدارک",
+    "ArtificialIntelligence": "سرویس هوش مصنوعی",
+    "Banking": "سرویس بنکینگ",
+    "FileUpload": "سرویس آپلود فایل",
+    "MobileBank": "سرویس موبایل بانک",
+    "OnlineDeposit": "سرویس افتتاح حساب",
+    "Sms": "سرویس پیامک",
+    "Yaghut": "سرویس یاقوت"
+
+  },
+  "shareMoney": {
+  },
+  "smsEnabled": {
+    "active": "فعال",
+    "notActive": "غیر‌فعال"
+  },
+  "category": {
+    "OPENED_DEPOSIT": "حساب افتتاح شده",
+    "READY_FOR_OPEN_DEPOSIT": "آماده برای افتتاح حساب",
+    "IN_PROCESS_OF_REGISTER": "در حال تکمیل مدارک",
+    "REJECTED": "رد شده",
+    "REFUND": "بازگشت مبلغ",
+    "UNKNOWN": "دسته بندی نشده"
+  },
+  "refundStatus": {
+    "INIT": "ثبت شده",
+    "SUCCESS": "موفق",
+    "FAIL": "ناموفق",
+    "PENDING": "در انتظار"
+  },
+  "platform": {
+    "WEB": "وب",
+    "MOBILE_BANK": "موبایل بانک"
+  }
+}
