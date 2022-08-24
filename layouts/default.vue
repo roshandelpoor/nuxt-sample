@@ -96,9 +96,9 @@ export default {
   ],
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
+      clipped: true,
+      drawer: true,
+      fixed: true,
       items: [
         {
           icon: 'mdi-apps',
@@ -114,12 +114,17 @@ export default {
           icon: 'mdi-account-plus',
           title: 'Users',
           to: '/users'
+        },
+        {
+          icon: 'mdi-logout',
+          title: 'logout',
+          to: '/logout'
         }
       ],
       miniVariant: false,
-      right: true,
+      right: false,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'in de default layouts'
     }
   }
 }
