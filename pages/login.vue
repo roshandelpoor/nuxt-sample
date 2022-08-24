@@ -6,30 +6,28 @@
       <h3>please login now</h3>
       <p style="margin-bottom: 50px;" />
 
-      <v-btn color="primary" @click="loginNow()">
-        login now (click)
-      </v-btn>
-      <v-btn
-        class="mx-2"
-        fab
-        dark
-        small
-        color="pink"
-      >
-        <v-icon dark>
-          mdi-heart
-        </v-icon>
-      </v-btn>
+      <br>
       <v-btn
         class="ma-2"
         :loading="loading"
         :disabled="loading"
         color="secondary"
-        @click="loader = 'loading'"
+        @click="loginNow()"
       >
-        Accept Terms
+        login now (click)
+        <v-icon dark>
+          mdi-heart
+        </v-icon>
       </v-btn>
 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <v-btn
         :loading="loading3"
         :disabled="loading3"
@@ -54,7 +52,7 @@
         @click="loader = 'loading2'"
       >
         Custom Loader
-        <template v-slot:loader>
+        <template #loader>
           <span>Loading...</span>
         </template>
       </v-btn>
@@ -85,7 +83,8 @@ export default {
       loading2: false,
       loading3: false,
       loading4: false,
-      loading5: false
+      loading5: false,
+      timeLoading: 10000
     }
   },
   watch: {
@@ -93,15 +92,19 @@ export default {
       const l = this.loader
       this[l] = !this[l]
 
-      setTimeout(() => (this[l] = false), 3000)
+      setTimeout(() => (this[l] = false), this.timeLoading)
 
       this.loader = null
     }
   },
   methods: {
     loginNow () {
+      this.timeLoading = 25000
+
+      const self = this
+      this.loader = 'loading'
       localStorage.setItem('Nuxt_jwtToken', 'roshandelpoor')
-      this.$router.push('/')
+      setTimeout(function () { self.$router.push('/') }, this.timeLoading)
     }
   }
 }
